@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "src/main/java",
-        "src/main/resources",
-        "src/test/java"
-    ],
-    "java.configuration.updateBuildConfiguration": "automatic"
-}
