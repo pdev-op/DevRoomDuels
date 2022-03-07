@@ -1,0 +1,19 @@
+name: DevRoomDuels
+main: com.pdev.drduels.Main
+description: Duels plugin for the DevRoom freelancer application
+version: 1.0.0
+author: pdev
+api-version: 1.13
+
+commands:
+  stats:
+    permission: drduels.stats
+    usage: /<command>
+  duel:
+    permission: drduels.duel
+    usage: /<command>
+  accept:
+    permission: drduels.duel
+    usage: /<command>
+
+

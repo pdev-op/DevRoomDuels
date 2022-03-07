@@ -1,0 +1,17 @@
+# DevRoomDuels version 1.0.0
+# by pdev
+
+# GENERAL SETTINGS
+# Database
+# NOTE - Currently the only supported data storage type is MySQL
+storage: MySQL
+# MySQL Settings
+host: "0.0.0.0"
+port: "3306"
+username: ""
+password: ""
+database: ""
+table-prefix: ""
+
+# MESSAGING
+prefix: "&e&lDRDuels &r&8| "
