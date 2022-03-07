@@ -5,8 +5,8 @@ import java.util.Queue;
 
 import com.pdev.drduels.Main;
 import com.pdev.drduels.api.Arena;
-import com.pdev.drduels.api.Duel;
-import com.pdev.drduels.api.DuelResult;
+import com.pdev.drduels.api.duel.Duel;
+import com.pdev.drduels.api.duel.DuelResult;
 
 import org.bukkit.entity.Player;
 

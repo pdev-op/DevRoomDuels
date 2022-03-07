@@ -1,8 +1,9 @@
-package com.pdev.drduels.api;
+package com.pdev.drduels.api.duel;
 
 import java.util.UUID;
 
 import com.pdev.drduels.Main;
+import com.pdev.drduels.api.Kit;
 import com.pdev.drduels.api.player.DuelPlayer;
 
 import org.bukkit.Bukkit;

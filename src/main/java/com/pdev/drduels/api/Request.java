@@ -33,6 +33,4 @@ public class Request {
     public long getCreatedAt() {
         return createdAt;
     }
-
-
 }

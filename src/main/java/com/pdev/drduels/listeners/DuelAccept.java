@@ -1,9 +1,9 @@
 package com.pdev.drduels.listeners;
 
 import com.pdev.drduels.Main;
-import com.pdev.drduels.api.Duel;
-import com.pdev.drduels.api.DuelState;
 import com.pdev.drduels.api.Request;
+import com.pdev.drduels.api.duel.Duel;
+import com.pdev.drduels.api.duel.DuelState;
 import com.pdev.drduels.api.events.AcceptEvent;
 
 import org.bukkit.event.EventHandler;

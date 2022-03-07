@@ -7,12 +7,12 @@ import com.pdev.drduels.Main;
 
 import org.bukkit.command.CommandSender;
 
-public abstract class DuelCommand {
+public abstract class DRDCommand {
     protected Main plugin;
     private ArrayList<String> aliases = new ArrayList<String>();
     private String usage;
 
-    public DuelCommand(Main plugin) {
+    public DRDCommand(Main plugin) {
         this.plugin = plugin;
     }
 

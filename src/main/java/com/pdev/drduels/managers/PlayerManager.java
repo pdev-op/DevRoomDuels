@@ -23,16 +23,14 @@ public class PlayerManager extends SQLManager {
         super(plugin);
 
         this.quitPlayers = new HashMap<>();
-
-        // Logging
         plugin.getLogger().info("PlayerManager initialized");
     }
 
     // NOTE
-    // - This is a simple implementation to prevent those who log out during a duel
-    // to get moved when they log back in.
+    // - This is a simple implementation to make those who log out during a duel
+    // to get moved out of the arena when they log back in.
     // I understand that this isn't perfect and storing a last used location &
-    // inventoryin the db would be better, but
+    // inventory in the database would be better, however
     // I am sticking to the provided data model
     public Map<UUID, QuitPlayer> getQuitPlayers() {
         return quitPlayers;

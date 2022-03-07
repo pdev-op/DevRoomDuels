@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 
 import com.pdev.drduels.Main;
-import com.pdev.drduels.api.DuelCommand;
+import com.pdev.drduels.api.DRDCommand;
 import com.pdev.drduels.api.player.StatsPlayer;
 import com.pdev.drduels.utils.StringUtils;
 
@@ -12,7 +12,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Stats extends DuelCommand {
+public class Stats extends DRDCommand {
     public Stats(Main plugin) {
         super(plugin);
 

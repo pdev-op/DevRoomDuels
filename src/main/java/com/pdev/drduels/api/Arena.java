@@ -3,6 +3,9 @@ package com.pdev.drduels.api;
 import java.time.Duration;
 
 import com.pdev.drduels.Main;
+import com.pdev.drduels.api.duel.Duel;
+import com.pdev.drduels.api.duel.DuelResult;
+import com.pdev.drduels.api.duel.DuelState;
 import com.pdev.drduels.api.player.DuelPlayer;
 import com.pdev.drduels.api.player.QuitPlayer;
 import com.pdev.drduels.api.player.StatsPlayer;

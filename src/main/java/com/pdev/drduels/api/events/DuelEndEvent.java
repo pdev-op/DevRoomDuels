@@ -1,6 +1,6 @@
 package com.pdev.drduels.api.events;
 
-import com.pdev.drduels.api.DuelResult;
+import com.pdev.drduels.api.duel.DuelResult;
 
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;

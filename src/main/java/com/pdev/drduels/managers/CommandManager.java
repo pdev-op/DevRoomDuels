@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.pdev.drduels.Main;
-import com.pdev.drduels.api.DuelCommand;
+import com.pdev.drduels.api.DRDCommand;
 import com.pdev.drduels.commands.Accept;
 import com.pdev.drduels.commands.Duel;
 import com.pdev.drduels.commands.Stats;
@@ -20,14 +20,14 @@ import org.bukkit.entity.Player;
 
 public class CommandManager implements CommandExecutor, TabCompleter {
     private Main plugin;
-    private ArrayList<DuelCommand> commands;
+    private ArrayList<DRDCommand> commands;
 
     public CommandManager(Main plugin) {
         // Plugin
         this.plugin = plugin;
 
         // Commands List
-        commands = new ArrayList<DuelCommand>();
+        commands = new ArrayList<DRDCommand>();
 
         // Commands
         commands.add(new Accept(plugin));
@@ -39,7 +39,7 @@ public class CommandManager implements CommandExecutor, TabCompleter {
     }
 
     public void registerCommands() {
-        for (DuelCommand c : commands) {
+        for (DRDCommand c : commands) {
             for (String s : c.getAliases()) {
                 if (plugin.getCommand(s) != null) {
                     plugin.getCommand(s).setExecutor(this);
@@ -52,7 +52,7 @@ public class CommandManager implements CommandExecutor, TabCompleter {
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         ArrayList<String> suggestions = new ArrayList<String>();
 
-        for (DuelCommand c : commands) {
+        for (DRDCommand c : commands) {
             for (String al : c.getAliases()) {
                 if (al.equalsIgnoreCase(alias) && c.hasPermission(sender)) {
                     HashMap<String, Integer> suggestionsMap = c.getSuggestions(sender);
@@ -80,7 +80,7 @@ public class CommandManager implements CommandExecutor, TabCompleter {
     }
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        for (DuelCommand c : commands) {
+        for (DRDCommand c : commands) {
             if (c.getAliases().contains(label.toLowerCase())) {
 
                 String prefix = plugin.getConfigFile().getPrefix();

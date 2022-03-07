@@ -3,7 +3,7 @@ package com.pdev.drduels.commands;
 import java.util.HashMap;
 
 import com.pdev.drduels.Main;
-import com.pdev.drduels.api.DuelCommand;
+import com.pdev.drduels.api.DRDCommand;
 import com.pdev.drduels.api.Kit;
 import com.pdev.drduels.api.events.RequestEvent;
 
@@ -11,7 +11,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Duel extends DuelCommand {
+public class Duel extends DRDCommand {
     public Duel(Main plugin) {
         super(plugin);
 

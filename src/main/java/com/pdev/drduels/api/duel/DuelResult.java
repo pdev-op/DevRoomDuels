@@ -1,4 +1,4 @@
-package com.pdev.drduels.api;
+package com.pdev.drduels.api.duel;
 
 import java.util.UUID;
 
